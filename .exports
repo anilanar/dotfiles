@@ -1,0 +1,28 @@
+# Path to your oh-my-zsh installation.
+export ZSH=~/.oh-my-zsh
+export UPDATE_ZSH_DAYS=7
+
+# Locale required for some python libs
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
+# Make vim the default editor.
+export EDITOR='nvim';
+
+# Highlight section titles in manual pages.
+export LESS_TERMCAP_md="${yellow}";
+
+# Don’t clear the screen after quitting a manual page.
+export MANPAGER='less -X';
+
+export PATH="$(brew --prefix homebrew/php/php70)/bin:$PATH"
+export PATH="/usr/local/bin:$PATH"
+export PATH="/usr/local/sbin:$PATH"
+
+export MANPATH="/usr/local/man:$MANPATH"
+
+# escape timeout for ZSH
+export KEYTIMEOUT=1
+
+# NVM: Node version manager
+export NVM_DIR="~/.nvm"
