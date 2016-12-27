@@ -2,7 +2,6 @@ runtime bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
 
 "colors
-set t_Co=256
 set termguicolors
 set background=light
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
@@ -114,10 +113,11 @@ endif
 let g:javascript_plugin_flow = 1
 
 "neomake
+autocmd! BufWritePost * Neomake
 let g:neomake_javascript_enabled_makers=['flow']
 let g:neomake_highlight_lines=1
 
 "neomake highlight groups
-highlight NeomakeError ctermfg=15 ctermbg=4 guibg=#d70000 guifg=white
+highlight NeomakeError guibg=#d70000 guifg=white
 
 set secure
