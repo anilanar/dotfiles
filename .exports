@@ -25,4 +25,4 @@ export MANPATH="/usr/local/man:$MANPATH"
 export KEYTIMEOUT=1
 
 # NVM: Node version manager
-export NVM_DIR="~/.nvm"
+export NVM_DIR="$HOME/.nvm"

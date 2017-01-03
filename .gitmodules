@@ -46,3 +46,6 @@
 [submodule ".vim/bundle/neovim-colors-solarized-truecolor-only"]
 	path = .vim/bundle/neovim-colors-solarized-truecolor-only
 	url = git@github.com:frankier/neovim-colors-solarized-truecolor-only.git
+[submodule ".vim/bundle/vim-fubitive"]
+	path = .vim/bundle/vim-fubitive
+	url = https://github.com/tommcdo/vim-fubitive
