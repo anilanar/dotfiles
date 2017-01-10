@@ -7,6 +7,7 @@ function doIt() {
 		--exclude "bootstrap.sh" \
 		--exclude "README.md" \
 		--exclude "LICENSE.txt" \
+                --exclude "macos.sh" \
 		-avh --no-perms -l . ~;
 }
 
