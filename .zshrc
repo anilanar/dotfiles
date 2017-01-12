@@ -7,7 +7,7 @@ HYPHEN_INSENSITIVE="true"
 DISABLE_AUTO_TITLE="true"
 COMPLETION_WAITING_DOTS="true"
 
-plugins=(git osx tmux)
+plugins=(git osx)
 
 ulimit -n 512
 
