@@ -29,11 +29,13 @@ export SSH_KEY_PATH="~/.ssh/id_rsa"
 
 alias composer="php ~/Scripts/composer.phar"
 
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+. "/usr/local/opt/nvm/nvm.sh"
 
 # # RBENV: Ruby version switcher
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
-# docker - dinghy
-eval $(docker-machine env pricesearch)
+# docker
+if type "docker-machine" &> /dev/null ; then
+    eval $(docker-machine env pricesearch)
+fi
 
