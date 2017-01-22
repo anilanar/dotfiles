@@ -115,6 +115,31 @@ let g:javascript_plugin_flow = 1
 "neomake
 autocmd! BufWritePost * Neomake
 let g:neomake_javascript_enabled_makers=['flow']
+let g:neomake_typescript_tscp_maker={
+\ 'args': ['--noEmit'],
+\ 'append_file': 0,
+\ 'cwd': getcwd(),
+\ 'errorformat':
+    \ '%E%f(%l\,%c): error %m,' .
+    \ '%E%f(%l\,%c): %m,' .
+    \ '%Eerror %m,' .
+    \ '%C%\s%\+%m',
+\ 'exe': 'tsc'
+\ }
+let g:neomake_typescript_enabled_makers=[]
+
+let g:neomake_tsc_maker={
+\ 'args': ['--noEmit'],
+\ 'append_file': 0,
+\ 'cwd': getcwd(),
+\ 'errorformat':
+    \ '%E%f(%l\,%c): error %m,' .
+    \ '%E%f(%l\,%c): %m,' .
+    \ '%Eerror %m,' .
+    \ '%C%\s%\+%m',
+\ 'exe': 'tsc'
+\ }
+
 let g:neomake_highlight_lines=1
 
 "neomake highlight groups
