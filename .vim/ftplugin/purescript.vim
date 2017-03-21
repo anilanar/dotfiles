@@ -1,0 +1,9 @@
+nmap <leader>t :PSCIDEtype<CR>
+nmap <leader>s :PSCIDEapplySuggestion<CR>
+nmap <leader>a :PSCIDEaddTypeAnnotation<CR>
+nmap <leader>i :PSCIDEimportIdentifier<CR>
+nmap <leader>r :PSCIDEload<CR>
+nmap <leader>p :PSCIDEpursuit<CR>
+nmap <leader>c :PSCIDEcaseSplit<CR>
+nmap <leader>qd :PSCIDEremoveImportQualifications<CR>
+nmap <leader>qa :PSCIDEaddImportQualifications<CR>

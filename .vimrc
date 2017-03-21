@@ -85,8 +85,8 @@ map <F10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans
             \ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
             \ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
 "run flow
-map <leader>f :w<CR>:FlowMake<CR>
-map <leader>t :w<CR>:FlowType<CR>
+"map <leader>f :w<CR>:FlowMake<CR>
+"map <leader>t :w<CR>:FlowType<CR>
 
 "key mappings - camel case motion
 call camelcasemotion#CreateMotionMappings('<leader>')
@@ -110,11 +110,11 @@ if executable('ag')
 endif
 
 "let g:flow#autoclose = 1
-let g:javascript_plugin_flow = 1
+"let g:javascript_plugin_flow = 1
 
 "neomake
 autocmd! BufWritePost * Neomake
-let g:neomake_javascript_enabled_makers=['flow']
+"let g:neomake_javascript_enabled_makers=['flow']
 let g:neomake_typescript_tscp_maker={
 \ 'args': ['--noEmit'],
 \ 'append_file': 0,

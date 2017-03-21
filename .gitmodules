@@ -52,3 +52,9 @@
 [submodule ".vim/bundle/typescript-vim"]
 	path = .vim/bundle/typescript-vim
 	url = https://github.com/leafgarland/typescript-vim.git
+[submodule ".vim/bundle/purescript-vim"]
+	path = .vim/bundle/purescript-vim
+	url = git@github.com:raichoo/purescript-vim.git
+[submodule ".vim/bundle/psc-ide-vim"]
+	path = .vim/bundle/psc-ide-vim
+	url = git@github.com:FrigoEU/psc-ide-vim.git
