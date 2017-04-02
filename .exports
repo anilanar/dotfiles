@@ -18,6 +18,7 @@ export MANPAGER='less -X';
 export PATH="$(brew --prefix homebrew/php/php70)/bin:$PATH"
 export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
+export PATH="$HOME/.psvm/current/bin:$PATH"
 
 export MANPATH="/usr/local/man:$MANPATH"
 
