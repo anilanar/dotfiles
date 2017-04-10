@@ -7,7 +7,7 @@ HYPHEN_INSENSITIVE="true"
 DISABLE_AUTO_TITLE="true"
 COMPLETION_WAITING_DOTS="true"
 
-plugins=(git osx)
+plugins=(git osx git-open)
 
 ulimit -n 512
 
