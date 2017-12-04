@@ -58,3 +58,6 @@
 [submodule ".vim/bundle/psc-ide-vim"]
 	path = .vim/bundle/psc-ide-vim
 	url = git@github.com:FrigoEU/psc-ide-vim.git
+[submodule ".vim/bundle/vim-vinegar"]
+	path = .vim/bundle/vim-vinegar
+	url = https://github.com/tpope/vim-vinegar

@@ -29,8 +29,6 @@ export SSH_KEY_PATH="~/.ssh/id_rsa"
 
 alias composer="php ~/Scripts/composer.phar"
 
-. "/usr/local/opt/nvm/nvm.sh"
-
 # # RBENV: Ruby version switcher
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
@@ -39,3 +37,5 @@ if type "docker-machine" &> /dev/null ; then
     eval $(docker-machine env pricesearch)
 fi
 
+# nvim
+init_nvim
