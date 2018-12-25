@@ -1,41 +1,27 @@
-source ~/.exports
-source ~/.functions
-
-skip_global_compinit=1
-ZSH_THEME="anilanar"
-HYPHEN_INSENSITIVE="true"
-DISABLE_AUTO_TITLE="true"
+export LANG=en_US.UTF-8
+export ZSH=$HOME/.oh-my-zsh
+export ZSH_THEME="avit"
 COMPLETION_WAITING_DOTS="true"
-
-plugins=(git osx git-open)
-
-ulimit -n 512
-
+DISABLE_CORRECTION="true"
+DISABLE_AUTO_UPDATE="true"
+plugins=(git autojump autoenv brew osx npm)
 source $ZSH/oh-my-zsh.sh
-
+source ~/Userlike/env/bin/activate
 bindkey -v
-bindkey '^P' up-history
-bindkey '^N' down-history
 
-bindkey '^?' backward-delete-char
-bindkey '^h' backward-delete-char
+export NVM_DIR="$HOME/.nvm"
+# This loads nvm
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+# This loads nvm bash_completion
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
-bindkey '^w' backward-kill-word
+# clipboard fix
+source "$HOME/.zsh/plugins/zsh-system-clipboard/zsh-system-clipboard.zsh"
 
-bindkey '^r' history-incremental-search-backward
+# fzf, ripgrep
+export FZF_DEFAULT_COMMAND='rg --files --hidden'
 
-# ssh
-export SSH_KEY_PATH="~/.ssh/id_rsa"
+export PATH=$PATH:$HOME/scripts
 
-alias composer="php ~/Scripts/composer.phar"
-
-# # RBENV: Ruby version switcher
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-
-# docker
-if type "docker-machine" &> /dev/null ; then
-    eval $(docker-machine env pricesearch)
-fi
-
-# nvim
-init_nvim
+# nix
+. /Users/anilanar/.nix-profile/etc/profile.d/nix.sh
