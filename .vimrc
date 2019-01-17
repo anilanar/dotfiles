@@ -1,3 +1,23 @@
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+call plug#begin('~/.vim/plugged')
+
+Plug 'kaicataldo/material.vim'
+Plug 'editorconfig/editorconfig-vim'
+Plug 'junegunn/fzf.vim'
+Plug 'AndrewRadev/splitjoin.vim'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-sensible'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-rhubarb'
+Plug 'tpope/vim-vinegar'
+
+call plug#end()
+
 set nocp
 set exrc
 set rtp+=/usr/local/opt/fzf
@@ -9,10 +29,11 @@ set expandtab tabstop=4 shiftwidth=4
 set mouse=a
 set statusline=%{expand('%:~:.')}[%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P
 set laststatus=2
+set completeopt=longest,menuone
 
 let mapleader = ','
 
-colorscheme solarized8_high
+colorscheme material
 
 " fzf, ripgrep
 nnoremap <C-f> :Files<Cr>
